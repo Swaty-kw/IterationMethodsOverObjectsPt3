@@ -79,7 +79,7 @@ function getStudentName(student) {
 function getCourse(student, courseIndex) {
   return student.courses[2];
 }
-console.log(getCourse(students[4], 2));
+//console.log(getCourse(students[4], 2));
 
 /**********
     Question 3:
@@ -98,10 +98,11 @@ console.log(getCourse(students[4], 2));
       **********/
 
 function addCourseToStudent(student, course) {
-  // Your code here
+  student.courses = ["History", "Art", "PE", "Physics"];
+  return student;
 }
 
-// console.log(addCourseToStudent(students[7], "Physics"));
+//console.log(addCourseToStudent(students[7], "Physics"));
 
 /**********
     Question 4:
@@ -112,9 +113,10 @@ function addCourseToStudent(student, course) {
       ANSWER: 4
     **********/
 function countCourses(student) {
-  // Your code here
+  return student.courses.length;
 }
-// console.log(countCourses(students[1]));
+
+//console.log(countCourses(students[1]));
 
 /**********
     Question 5: 🌶️🌶️
@@ -130,10 +132,7 @@ function countCourses(student) {
         'PE'
       ]
     **********/
-function listAllCourses(students) {
-  // Your code here
-}
-// console.log(listAllCourses(students));
+function listAllCourses(students) {}
 
 /**********
     Question 6:
@@ -148,9 +147,11 @@ function listAllCourses(students) {
     **********/
 
 function removeCourseFromStudent(student, course) {
-  // Your code here
+  students.courses.splice(course, 1);
 }
-// console.log(removeCourseFromStudent(students[6],"Science"));
+return student; // not yet complete dont know how to solve.
+
+//console.log(removeCourseFromStudent(students[6], "Science"));
 
 /**********
     Question 7:
@@ -163,10 +164,10 @@ function removeCourseFromStudent(student, course) {
     **********/
 
 function findStudentById(studentId, students) {
-  // Your code here
+  return students.find((student) => student.id === 10);
 }
 
-// console.log(findStudentById(10,students));
+//console.log(findStudentById(10, students));
 
 /**********
     Question 8: 🌶️🌶️🌶️
