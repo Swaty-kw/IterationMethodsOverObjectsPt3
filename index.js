@@ -77,7 +77,7 @@ function getStudentName(student) {
     **********/
 
 function getCourse(student, courseIndex) {
-  return student.courses[2];
+  return student.courses[courseIndex];
 }
 //console.log(getCourse(students[4], 2));
 
@@ -98,7 +98,7 @@ function getCourse(student, courseIndex) {
       **********/
 
 function addCourseToStudent(student, course) {
-  student.courses = ["History", "Art", "PE", "Physics"];
+  student.courses.push[course];
   return student;
 }
 
@@ -154,7 +154,7 @@ function removeCourseFromStudent(student, course) {
 
 // not yet complete dont know how to solve.
 
-console.log(removeCourseFromStudent(students[6], "Science"));
+//console.log(removeCourseFromStudent(students[6], "Science"));
 
 /**********
     Question 7:
@@ -167,10 +167,10 @@ console.log(removeCourseFromStudent(students[6], "Science"));
     **********/
 
 function findStudentById(studentId, students) {
-  return students.find((student) => student.id === 10);
+  return students.find((student) => student.id == studentId);
 }
 
-//console.log(findStudentById(10, students));
+console.log(findStudentById(10, students));
 
 /**********
     Question 8: 🌶️🌶️🌶️
@@ -197,7 +197,11 @@ function findStudentById(studentId, students) {
     **********/
 
 function getStudentsByCourse(course, students) {
-  // Your code here
+  let studentInCourse = studens.filter(student)=>{
+    if (student.courses.include==studentInCourse)
+        return true
+    else{return false}
+  }
 }
 
 // console.log(getStudentsByCourse("Music",students));
