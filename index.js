@@ -147,11 +147,14 @@ function listAllCourses(students) {}
     **********/
 
 function removeCourseFromStudent(student, course) {
-  students.courses.splice(course, 1);
-}
-return student; // not yet complete dont know how to solve.
+  student.courses.splice(course, 2);
 
-//console.log(removeCourseFromStudent(students[6], "Science"));
+  return student;
+}
+
+// not yet complete dont know how to solve.
+
+console.log(removeCourseFromStudent(students[6], "Science"));
 
 /**********
     Question 7:
